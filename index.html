@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shruti Suresh Patil | B.Tech Portfolio</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS for Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- TypeIt.js for typing animation -->
+  <script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.js"></script>
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .section {
+      display: none;
+    }
+    .active {
+      display: block;
+      animation: fadeIn 0.6s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-blue-100 to-purple-200 font-sans text-gray-800">
+
+  <!-- Header -->
+  <header class="text-center py-12 bg-gradient-to-r from-indigo-500 to-purple-600 text-white shadow-lg">
+    <h1 class="text-5xl font-extrabold mb-2">Shruti Suresh Patil</h1>
+    <p id="typing-text" class="text-lg h-6"></p>
+    <nav class="mt-6 space-x-6 text-white font-semibold">
+      <button onclick="show('about')" class="hover:underline">About</button>
+      <button onclick="show('skills')" class="hover:underline">Skills</button>
+      <button onclick="show('projects')" class="hover:underline">Projects</button>
+      <a href="https://drive.google.com/file/d/1cf0qBAgqHtgbA-sIgcFwgZpXCPUHiTjQ/view?usp=sharing" download class="ml-4 bg-white text-indigo-600 px-4 py-1 rounded-full font-semibold hover:bg-indigo-200 transition">Download Resume</a>
+    </nav>
+  </header>
+
+  <!-- Main Container -->
+  <main class="max-w-5xl mx-auto p-6">
+
+    <!-- About Section -->
+    <section id="about" class="section active" data-aos="fade-right">
+      <h2 class="text-4xl font-bold mb-4">🎓 About Me</h2>
+      <p class="text-lg leading-relaxed">I'm a passionate final-year B.Tech student with a strong foundation in software development, web technologies, and machine learning. I thrive on solving real-world problems through smart tech solutions. Currently interning at <strong>IIIC</strong> where I work on impactful tools like <em>HealthPulse</em> and AI-powered interview systems.</p>
+      <p class="mt-4 text-md text-gray-600">🎓 B.Tech in Computer Science<br/>📍Mumbai </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section" data-aos="fade-up">
+      <h2 class="text-4xl font-bold mb-6">🛠 Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition">
+          <i class="fas fa-code text-indigo-600 text-3xl mb-2"></i>
+          <p class="font-semibold">Python</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition">
+          <i class="fas fa-laptop-code text-purple-600 text-3xl mb-2"></i>
+          <p class="font-semibold">Streamlit</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition">
+          <i class="fab fa-js text-yellow-500 text-3xl mb-2"></i>
+          <p class="font-semibold">JavaScript</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition">
+          <i class="fas fa-database text-green-600 text-3xl mb-2"></i>
+          <p class="font-semibold">Firebase</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition">
+          <i class="fas fa-robot text-pink-600 text-3xl mb-2"></i>
+          <p class="font-semibold">ML & AI</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-xl transition">
+          <i class="fas fa-users text-blue-600 text-3xl mb-2"></i>
+          <p class="font-semibold">Teamwork</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section" data-aos="fade-left">
+      <h2 class="text-4xl font-bold mb-6">🚀 Projects</h2>
+      <div class="space-y-6">
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-[1.02] transition">
+          <h3 class="text-2xl font-bold mb-2">HealthPulse</h3>
+          <p class="text-gray-700">AI-based digital healthcare assistant for symptom analysis.</p>
+          <p class="text-sm mt-2 text-gray-500">Python, Streamlit, Firebase</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-[1.02] transition">
+          <h3 class="text-2xl font-bold mb-2">AI Interview System</h3>
+          <p class="text-gray-700">Mock interview platform with real-time AI scoring and feedback.</p>
+          <p class="text-sm mt-2 text-gray-500">Streamlit, OpenAI API</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-[1.02] transition">
+          <h3 class="text-2xl font-bold mb-2">Random Question Generator</h3>
+          <p class="text-gray-700">Tool for generating randomized question papers from Excel files.</p>
+          <p class="text-sm mt-2 text-gray-500">Python, Pandas</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-gray-800 text-white mt-12">
+    <p>Connect with me: <a href="mailto:shrupatil1804@gmail.com" class="underline">shrupatil1804@gmail.com</a></p>
+    <p class="mt-2 text-sm">🌐 <a href="https://github.com/shru-1087" target="_blank" class="underline">GitHub</a> | <a href="https://www.linkedin.com/in/shruti-patil-732218233" target="_blank" class="underline">LinkedIn</a></p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800 });
+
+    function show(id) {
+      document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    new TypeIt("#typing-text", {
+      strings: ["Final Year B.Tech Student", "Web & AI Developer", "Passionate Problem Solver"],
+      speed: 60,
+      breakLines: false,
+      loop: true
+    }).go();
+  </script>
+</body>
+</html>
